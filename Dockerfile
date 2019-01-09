@@ -5,7 +5,7 @@ WORKDIR $root
 
 RUN apt-get update && \
 apt-get -y upgrade && \
-apt-get -y install git unzip vim
+apt-get -y install git unzip nano
 
 RUN curl -s https://getcomposer.org/installer | php
 RUN mv composer.phar /usr/local/bin/composer

@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t recipes .
+docker build -t jobcron .

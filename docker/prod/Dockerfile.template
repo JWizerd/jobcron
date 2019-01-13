@@ -1,0 +1,11 @@
+FROM #SERVICENAME# 
+
+# package up all the code and credentials
+ADD src /var/www/html
+
+#remove the default index from apache install
+# RUN rm /var/www/html/index.html
+
+# Install custom apache config
+ADD apache2.conf /etc/apache2/apache2.conf
+ADD php.ini /usr/local/etc/php/

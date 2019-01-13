@@ -1,2 +1,9 @@
-/vendor
-credentials.php
+docker/dev/tmp
+captain*
+src/vendor
+aws.creds
+docker/run.log
+docker/prod/Dockerfile
+captain*
+.DS_Store
+docker/.DS_Store

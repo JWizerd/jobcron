@@ -23,7 +23,7 @@ ADD apache2.conf /etc/apache2/apache2.conf
 #
 
 RUN apt-get update \
-	&& apt-get install -y wget git libssl-dev \
+	&& apt-get install -y wget git libssl-dev zip unzip \
 	&& rm -rf /var/lib/apt/lists/* \
 	&& wget -O /usr/local/bin/dumb-init https://github.com/Yelp/dumb-init/releases/download/v1.0.3/dumb-init_1.0.3_amd64 \
 	&& chmod +x /usr/local/bin/dumb-init \

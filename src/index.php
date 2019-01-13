@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '../../vendor/autoload.php';
 
 function hprint ($s) {
   echo "<p>" . $s . "</p>";

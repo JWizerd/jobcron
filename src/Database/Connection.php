@@ -7,7 +7,7 @@
 
 namespace JobCron\Database;
 
-use \JobCron\MongoDB\Client as Mongo;
+use \MongoDB\Client as Mongo;
 
 class Connection 
 {

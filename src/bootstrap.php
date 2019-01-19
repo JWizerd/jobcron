@@ -4,14 +4,37 @@ require __DIR__ . '../../vendor/autoload.php';
 
 use MongoDB\Client as Connection;
 
-$dbUrl = sprintf(
-  "mongodb://%s:27017",
-  getenv('dbname')
-);
+require 'router.php';
 
-$connection = new Connection($dbUrl);
+class App 
+{
+    // Hold an instance of the class
+    private static $instance;
 
-print_r($connection);
+    public static function db() 
+    {
+        $dbUrl = sprintf(
+          "mongodb://%s:27017",
+          getenv('dbname')
+        );
+
+        return new Connection($dbUrl);
+    }
+
+    /**
+     * Create the App singleton 
+     */
+    public static function get() 
+    {
+        if (!isset(self::$instance)) {
+            self::$instance = new self;
+        }
+
+        return self::$instance;
+    }
+}
+
+App::get()->db();
 
 // print_r($connection);
 

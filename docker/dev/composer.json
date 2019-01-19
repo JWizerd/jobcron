@@ -6,6 +6,8 @@
         "monolog/monolog": "^1.2"
     },
     "autoload": {
-      "psr-0": {"JobCron": "html/"}
+        "psr-0": {
+            "JobCron\\": "html/"
+        }
     }
 }

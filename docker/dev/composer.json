@@ -3,7 +3,8 @@
         "mongodb/mongodb": "^1.1",
         "guzzlehttp/guzzle": "~6.0",
         "phpmailer/phpmailer": "~6.0",
-        "monolog/monolog": "^1.2"
+        "monolog/monolog": "^1.2",
+        "pecee/simple-router": "^4.2"
     },
     "autoload": {
         "psr-0": {

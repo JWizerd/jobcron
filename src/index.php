@@ -1,12 +1,7 @@
 <?php
 
-require __DIR__ . '../../vendor/autoload.php';
 
-function hprint ($s) {
-  echo "<p>" . $s . "</p>";
-}
-
-$dburl = "mongodb://" . getenv('dbname') . ":27017";
+require 'bootstrap.php';
 
 hprint("[*] connecting to db on " . $dburl);
 hprint(" - the db name is passed in as an ENV");

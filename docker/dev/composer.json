@@ -1,8 +1,6 @@
 {
     "require": {
-        "alcaeus/mongo-php-adapter": "^1.1",
-        "doctrine/mongodb": "^1.6",
-        "doctrine/mongodb-odm": "^1.2",
+        "mongodb/mongodb": "^1.1",
         "guzzlehttp/guzzle": "~6.0",
         "phpmailer/phpmailer": "~6.0",
         "monolog/monolog": "^1.2"

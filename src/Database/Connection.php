@@ -13,6 +13,11 @@ class Connection
 
     public function __construct() 
     {
+        $this->setConnection();
+    }
+
+    private function setConnection() 
+    {
         if (getenv('dbname')) {
             $dbUrl = sprintf(
               "mongodb://%s:27017",
@@ -25,8 +30,12 @@ class Connection
         }
     }
 
-    public static function db() {
-        $self = new static;
-        return $self->connection;
+    public function get() {
+        if (empty($this->connection)) {
+            $this->setConnection();
+            return $this->connection;
+        }
+
+        return $this->connection;
     }   
 }

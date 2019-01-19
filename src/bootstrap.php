@@ -2,6 +2,6 @@
 
 require __DIR__ . '../../vendor/autoload.php';
 
-use Database\Connection;
+use JobCron\Database\Connection;
 
 print_r(new Connection());

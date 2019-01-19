@@ -1,13 +1,13 @@
-<?
+<?php
 /**
  * this class will be used to connect to the mongo instance
  * it should only return an mongo db instance to interface 
  * with the db. It should not handle data operations only access.
  */
 
-namespace Database;
+namespace JobCron\Database;
 
-use MongoDB\Client as Mongo;
+use \MongoDB\Client as Mongo;
 
 class Connection 
 {
@@ -15,7 +15,6 @@ class Connection
 
     public function __construct() 
     {
-        echo "test";
         $this->setConnection();
     }
 

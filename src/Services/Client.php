@@ -5,8 +5,6 @@
  * from which it builds it's configurations and interactions from there
  */
 
-require 'vendor/autoload.php';
-
 use GuzzleHttp\Client as Guzzle;
 use GuzzleHttp\Promise as Promise;
 use \Exception;

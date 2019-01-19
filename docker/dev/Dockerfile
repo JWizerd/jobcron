@@ -30,7 +30,7 @@ RUN apt-get update \
 	&& pecl install mongodb \
 	&& docker-php-ext-enable mongodb \
 	&& cd /var/www;curl -sS https://getcomposer.org/installer | php \
-	&& cd /var/www;php composer.phar install \
+	&& cd /var/www;php composer.phar config "platform.ext-mongo" "1.6.16" install \
 	&& a2enmod rewrite headers
 
 # wire in a startup script

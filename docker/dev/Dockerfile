@@ -31,6 +31,7 @@ RUN apt-get update \
 	&& docker-php-ext-enable mongodb \
 	&& cd /var/www;curl -sS https://getcomposer.org/installer | php \
 	&& cd /var/www;php composer.phar install \
+    && php composer.phar dumpautoload -o \
 	&& a2enmod rewrite headers
 
 # wire in a startup script

@@ -4,5 +4,8 @@
         "guzzlehttp/guzzle": "~6.0",
         "phpmailer/phpmailer": "~6.0",
         "monolog/monolog": "^1.2"
+    },
+    "autoload": {
+      "psr-0": {"JobCron": "src/"}
     }
 }

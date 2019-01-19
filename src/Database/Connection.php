@@ -5,6 +5,8 @@
  * with the db. It should not handle data operations only access.
  */
 
+namespace Database;
+
 use MongoDB\Client as Mongo;
 
 class Connection 
@@ -13,6 +15,7 @@ class Connection
 
     public function __construct() 
     {
+        echo "test";
         $this->setConnection();
     }
 

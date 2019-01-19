@@ -3,7 +3,7 @@
 
 require 'bootstrap.php';
 
-print_r($connection);
+// print_r($connection);
 
 // $collection = (new MongoDB\Client($dburl))->example->users;
 

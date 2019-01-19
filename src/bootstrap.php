@@ -1,8 +1,7 @@
-<?
-
-use Database\Connection;
+<?php
 
 require __DIR__ . '../../vendor/autoload.php';
 
-$connection = (new Connection())->get();
+use Database\Connection;
 
+print_r(new Connection());

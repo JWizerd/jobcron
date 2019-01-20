@@ -1,4 +1,4 @@
-<? 
+<?php
 /**
  * The logger class will interact with the php package Monolog
  * for handling error logs when they occur at runtime
@@ -6,10 +6,10 @@
 
 namespace JobCron\Utilities;
 
-use Error;
-
-use Monolog\Logger;
+use Monolog\Logger as MonoLogger;
 use Monolog\Handler\StreamHandler;
+
+// use Error;
 
 class Logger 
 {
@@ -27,14 +27,14 @@ class Logger
         'emergency' => 600
     ];
 
-    private $instance;
+    private static $monolog;
 
     public static function start()
     {
-        if (!isset(self::$instance)) {
-            self::$instance = new Logger('logger');
-            self::$instance->pushHandler(new StreamHandler(__DIR__ . self::LOG_NAME, Logger::WARNING));
-            return $instance;
+        if (!isset(self::$monolog)) {
+            self::$monolog = new MonoLogger('logger');
+            self::$monolog->pushHandler(new StreamHandler(__DIR__ . self::LOG_NAME, MonoLogger::WARNING));
+            return self::$monolog;
         } 
     }
 
@@ -42,9 +42,9 @@ class Logger
     {
         try {
             if (array_key_exists($logType, self::$logTypes)) {
-                self::$instance->warning(
+                self::$monolog->warning(
+                    $logType,
                     [
-                        'type' => $logType,
                         'code' => self::$logTypes[$logType],
                         'message' => debug_backtrace()
                     ]

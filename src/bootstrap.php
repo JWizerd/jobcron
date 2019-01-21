@@ -36,9 +36,6 @@ class App
     }
 }
 
-Logger::write('error', 'test');
-
-
 
 // print_r($connection);
 

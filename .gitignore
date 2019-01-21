@@ -7,3 +7,5 @@ docker/prod/Dockerfile
 captain*
 .DS_Store
 docker/.DS_Store
+src/credentials.php
+.idea/

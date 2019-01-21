@@ -3,6 +3,8 @@
 require __DIR__ . '../../vendor/autoload.php';
 
 use MongoDB\Client as Connection;
+use JobCron\Utilities\Logger;
+use JobCron\Utilities\Mailer;
 
 require 'router.php';
 
@@ -34,7 +36,11 @@ class App
     }
 }
 
-App::get()->db();
+// App::get()->db();
+
+// Logger::start()->write('error', 'test');
+
+
 
 // print_r($connection);
 

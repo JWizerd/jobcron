@@ -3,8 +3,10 @@
 require __DIR__ . '../../vendor/autoload.php';
 
 use MongoDB\Client as Connection;
+
 use JobCron\Utilities\Logger;
 use JobCron\Utilities\Mailer;
+use JobCron\Utilities\CredentialsManager;
 
 require 'router.php';
 
@@ -15,12 +17,9 @@ class App
 
     public static function db() 
     {
-        $dbUrl = sprintf(
-          "mongodb://%s:27017",
-          getenv('dbname')
+        return new Connection(
+            CredentialsManager::get('mongo')['url']
         );
-
-        return new Connection($dbUrl);
     }
 
     /**
@@ -36,7 +35,7 @@ class App
     }
 }
 
-// App::get()->db();
+App::get()->db();
 
 // Logger::start()->write('error', 'test');
 

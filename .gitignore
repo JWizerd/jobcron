@@ -9,3 +9,4 @@ captain*
 docker/.DS_Store
 src/credentials.php
 .idea/
+src/error.log

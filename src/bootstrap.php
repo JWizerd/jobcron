@@ -10,6 +10,7 @@ use JobCron\Utilities\CredentialsManager;
 
 require 'router.php';
 
+/* access db connection like so: App::get()->db(); */
 class App 
 {
     // Hold an instance of the class
@@ -35,9 +36,7 @@ class App
     }
 }
 
-App::get()->db();
-
-// Logger::start()->write('error', 'test');
+Logger::write('error', 'test');
 
 
 

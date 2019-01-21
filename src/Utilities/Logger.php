@@ -9,14 +9,16 @@ namespace JobCron\Utilities;
 use Monolog\Logger as MonoLogger;
 use Monolog\Handler\StreamHandler;
 
+use \Throwable;
+
 // use Error;
 
 class Logger 
 {
-    const LOG_FILE = 'error.log';
+    const LOG_FILE = '/var/www/html/error.log';
     const LOG_NAME = 'logger';
 
-    private $logTypes = [
+    private static $logTypes = [
         'debug' => 100,
         'info' => 200,
         'notice' => 250,
@@ -29,17 +31,20 @@ class Logger
 
     private static $monolog;
 
-    public static function start()
-    {
-        if (!isset(self::$monolog)) {
-            self::$monolog = new MonoLogger('logger');
-            self::$monolog->pushHandler(new StreamHandler(__DIR__ . self::LOG_NAME, MonoLogger::WARNING));
-            return self::$monolog;
-        } 
+    public static function start() : void 
+    {  
+        try {
+            self::$monolog = new MonoLogger(self::LOG_NAME);
+            self::$monolog->pushHandler(new StreamHandler(self::LOG_FILE, MonoLogger::WARNING));
+        } catch (Throwable $e) {
+            print_r($e);
+        }
     }
 
     public static function write(string $logType = 'error', string $logMessage) : void
     {
+        self::start();
+
         try {
             if (array_key_exists($logType, self::$logTypes)) {
                 self::$monolog->warning(

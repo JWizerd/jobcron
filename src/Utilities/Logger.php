@@ -46,7 +46,7 @@ class Logger
         }
     }
 
-    public static function write(string $logType = 'error', string $logMessage, bool $backtrace, bool $notify = false) : void
+    public static function write(string $logMessage, string $logType = 'error', bool $backtrace = false, bool $notify = false) : void
     {
         $monolog = self::getInstance();
 

@@ -5,7 +5,6 @@ require __DIR__ . '../../vendor/autoload.php';
 use MongoDB\Client as Connection;
 
 use JobCron\Utilities\Logger;
-use JobCron\Utilities\Mailer;
 use JobCron\Utilities\CredentialsManager;
 
 require 'router.php';

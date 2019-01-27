@@ -80,7 +80,7 @@ class Scraper {
      * 
      * @return array an array of links and their title attributes
      */
-    public function scrapeLinks($linkClass) : array 
+    public function scrapeLinks(string $linkClass) : array 
     {
         $items = $this->find($linkClass);
         $links = [];

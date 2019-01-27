@@ -73,4 +73,64 @@ class Scraper {
         return $finder->query($queryString);
     }
 
+    /**
+     * scrape website and return job links
+     * 
+     * @param $urlOrFilePath location of webpage
+     * 
+     * @return array an array of links and their title attributes
+     */
+    public function scrapeLinks($linkClass) : array 
+    {
+        $items = $this->find($linkClass);
+        $links = [];
+        $i = 1;
+
+        $links = array_filter((array)$items, function($node) {
+            return $node->tagName === 'a';
+        });
+
+        foreach ($items as $node) {
+            if ($node->tagName === 'a') {
+                foreach($node->attributes as $attribute) {
+                    if (!empty($attribute->name) && $attribute->name == 'href') {
+                        $links[$i]['text'] = $node->textContent;
+                        $links[$i]['link'] = "https://indeed.com$attribute->value";
+                    }
+
+                    $i++;
+                }
+            }
+        }
+
+        return $links;
+    }
+
+    /**
+     * create an html formatted strings from the scraped links
+     * @param  array  $links an multi dimensional array of formatted links
+     * @return html string for mailer
+     */
+    protected function htmlLinks(array $links) : string
+    {
+        /**
+         * @todo  create an EmailBuilder Utility class that will take in an formatted array
+         * i.e. [ [link] => [ 'url' => 'http://google.com', 'text' => google] ]
+         * and generate an html formatted email
+         */
+        
+        $htmlLinks = array_map(
+            function($link) { 
+                if (!empty($link['link'] && !empty($link['text']))) {
+                    return '<h3><a href=' . $link["link"] . '>' . $link["text"] . '</a></h3><hr>';
+                }
+            },
+            $links
+        );
+
+        array_unshift($htmlLinks, '<html><body>');
+        array_push($htmlLinks, '<body></html>');
+        
+        return implode('', $htmlLinks);   
+    }
 }

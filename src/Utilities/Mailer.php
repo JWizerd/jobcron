@@ -23,7 +23,7 @@ class Mailer
      * @param  [type] $email        who to send to, probably the signed in users email
      * @return [type]            the message response
      */
-    public static function send(string $email, string $subject, $message) : void
+    public static function send(string $email, string $subject, string $message) : void
     {
         $creds = self::getCreds();
         $mailgun = self::getMailgun($creds['key']);
@@ -32,7 +32,7 @@ class Mailer
             'from' => $email,
             'to' => $email,
             'subject' => $subject,
-            'text' => $message
+            'html' => $message
         ];
 
         try {              

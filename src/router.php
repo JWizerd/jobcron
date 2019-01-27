@@ -12,7 +12,7 @@ use JobCron\Controller\IndeedController;
 SimpleRouter::setDefaultNamespace('JobCron\Controllers');
 
 SimpleRouter::get('/', 'PagesController@index');
-SimpleRouter::get('/indeed', 'IndeedController@view');
+SimpleRouter::get('/indeed', 'JobsController@indeed');
 
 // Start the routing
 SimpleRouter::start();

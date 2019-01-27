@@ -116,7 +116,8 @@ class Scraper {
         /**
          * @todo  create an EmailBuilder Utility class that will take in an formatted array
          * i.e. [ [link] => [ 'url' => 'http://google.com', 'text' => google] ]
-         * and generate an html formatted email
+         * and generate an html formatted email. this function is out of the responsibility
+         * of the scraper class.
          */
         
         $htmlLinks = array_map(

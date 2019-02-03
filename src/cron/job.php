@@ -3,6 +3,7 @@
 // * */2 * * * tail -f php /var/www/html/cron/job.php JobsController indeed
 require __DIR__ . '../../../vendor/autoload.php';
 
+use JobCron\Controllers\JobsController;
 use JobCron\Utilities\Logger;
 use JobCron\Utilities\Mailer;
 
@@ -13,7 +14,7 @@ try {
 
     // must be an instance of controller and have an action
     if (class_exists($class) && method_exists($class, $action)) {
-        (new $class)->$action();
+        (new JobsController)->$action();
     } else {
         throw new Exception(
             "{$class} doesn't exist or method

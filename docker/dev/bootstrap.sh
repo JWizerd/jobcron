@@ -8,8 +8,8 @@ echo "Launching Apache2 webserver...";
 cd /var/www/ && php composer.phar dumpautoload -o;
 
 echo "Launching the crontab....";
-/usr/sbin/cron -f &
-touch /var/www/html/cronErrors.txt
-chmod 0777 /var/www/html/cronErrors.txt
+# /usr/sbin/cron -f &
+# touch /var/www/html/cronErrors.txt
+# chmod 0777 /var/www/html/cronErrors.txt
 
 exec apache2-foreground

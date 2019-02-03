@@ -3,9 +3,6 @@
 # source config vars
 . ./config.sh
 
-# run the mongo submodule which creates the net and runs the db
-. ../mongo/docker/dev/run.sh
-
 echo "Running $service docker image..."
 docker rm -f $service
 docker run --name="$service" \
@@ -15,10 +12,8 @@ docker run --name="$service" \
     -m 2g \
     	-e "env=dev" \
 	-e "version=stage" \
-	-e "dbname=$dbname" \
 	-p $externalPort:$appPort \
 	-v ${PWD}/../../src/:/var/www/html/ \
-	--network=$netname \
 	-d $service
 
 docker ps

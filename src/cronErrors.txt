@@ -1,0 +1,57 @@
+Array
+(
+    [5] => Array
+        (
+            [text] => Experienced Web Developer Needed
+            [link] => https://indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0CxnTHTwpPf9fJk9QaLw29lV-8qLgfkFTqXjXjhxkLkIZga4b8KpfJ9BODGishmfao5D19IHhr-Rus33gW_UxKzr-I2LQjj0aJKdEhtSZGY5nm2NJBQ1aaugblbsTI81m7dv9uh98voMWCW0zNjUiJ7GKBFlk6bzpFKee_npOdGyilvkgu-IOJunlIq0rCtU_8W2IVWmC87BkPoAiIHqIp3c4Ih7EYQzzulxHGNNAhwLr4nGVupcdJDLSbNK12PGPkpvuA-ZCg-JGghWO3okEl_sY7ss3wwjC4N0pT5JR7Fvs_aKPY0qdWCnktbbvmxns-qWhwai8TmekxkORyTK8leurIUeWEmrLjBMUXrl_0SXIgBYh23CPYyI3Sr8CtmmgPki_NOkPIsC99ZQoduZzM6IzvahKXcPUK4Zx7ZtRSpDmgQ_Bhfrg286SrTniJsd-0=&vjs=3&p=1&sk=&fvj=1
+        )
+
+    [14] => Array
+        (
+            [text] => Junior Web Application Developer (local candidates only)
+            [link] => https://indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0AkgpbRSXBNv4yufKK5UJg7G-ynV_L1VQ0pHiqnNu05VD905tKGNj8tZXoebrRlr4XKh3mPyYDQAkZBqNYi0ZjXeNTcD9dapd1uZFYpFe1-XMlmt_iZug4Ne1nCH3b5y66ilbb6E5rCxm_F9-Sa36PvXfh5-mZgMeflVN4GzV_eSZLB1syZndas1tIfRyOW8cMaJLr7VKUbPSJGC42e4x0FwuRLfOZR_2scYJsfcwNc3q5jY_NYuZ1LybzlU0dbnCsfJUBrREeXQcNt2sRDizW0HNA0rGv9acokqldBJOdtFsj3ZGrnhaWivNuqIoPV980kbmQHuHWLzgGa_amxnErr9RZbv2xPNvnwW97C6cUbfleydXc-VdjRjC9G6p931wYvk1oHt5Il00CUkGc2yRIh6tsM5FFUVvf3o6W3hG4XgON1twGNG-f4cbsNXj1j6PZTcugfONKN_cBmcVY3VVHo&vjs=3&p=2&sk=&fvj=1
+        )
+
+    [23] => Array
+        (
+            [text] => Onsite PHP Web Developer, Mid Level
+            [link] => https://indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0DgHJnq-x9IqXR81kzrkTaaZKPqpGQNzjNAVwBvmyuz-UQzWZU1hQPgeL5k9sILJzOCgD9p92_FCs0mEfzMCjspiHX3g416Ew2f89FaIXckVA2qKQT6eS3kDE_HB7OrkSTqXx1aQ346JZXCM8EHcHwckkTRbZ-pUkSqRT1K6Kd40NkTL0cMYZw5QO2fWIa01WlUhMdSzabVoiAWFjohd7U5r-thni42dCWiO_FFfXyFHRV9fWovGAf_LCEZAmkhK2_ADYuPbxV8bzbQUFkkR_f6MwIFAWXRI1NX9gP_nYsof8r_37xGrazpHI_MNVZmXi_KTM5jVI2rIYhzLESXPJNlSeEo4x6UPCGTHcGr-pmrRCKUNBet3k1u8r4NfQjJ2EReg4zmhKaq31BM69Mp2Dk9nrP2RpsHg_EJSNQYgenVH9Qh45pRmjA21UufbEI8ZkwdTjGADp64bg==&vjs=3&p=3&sk=&fvj=1
+        )
+
+    [32] => Array
+        (
+            [text] => Front End Developer / Angular Developer
+            [link] => https://indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0Baqf35Q6_FNauX1IeaOhOgFjSsz0DROdO0XEMNNUBdfPbj8B9jl2MjZTVoDi13e0NC-pu6UZIL06tlCpIPHbMf_15OxOTusTvVQAuqEzePsSD8yBknY4DqWPqCmAUkI1kw4T126g66NYZkQke8b3hTF9PjhZTmPP5Qvi8YO6daPF-FOzSm6lcBzXjKYknIr3_Fn7IHlpRumP6RjQHsXnlZu6bTE56yWROJVlFKK2R_DwEZArpEgGaTmyCSkBvZj5lsK1PFGH_MSqQ-7taQQFX8UaS00zTcSIf90UHDMYKb3w92jsqn3B7gsrqGj8g0tgLHQEN-0ekwhbhtkboFmMtpBgmxGcQ1eLylPApTu5X_JUv1tLbbz011wtFcQyNTRM1JfNWug2YE2ZgHmw6my-YjNIlvtXAYqAwZT_bHe9hl52uU_encBCHtlRGCtzfqZa82AAcrZO3VjA==&vjs=3&p=4&sk=&fvj=1
+        )
+
+    [41] => Array
+        (
+            [text] => Web Developer
+            [link] => https://indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0DKSKBiX51o_Zg_ZGPY75EISO1FKgztmg08hgsafVrA7_hh2BSlJeols9maA_axzyVnmkTN50pV6fSvhNOAAFhTau8hrDfVuqPSuQMy8mgDK-RlgxKyqdbnqz_6T3lyQnky8Jdm1YvN7cyVRsIAB4qFd9kUcsnmO5NxnqYPQL5onAMO4uWEAXwBE3TMoFXRYbNchWmPz6H0erYvrgwWYO5yniO9Wx5x4ugs1X-EZqhFXb34lIFKdGOgKV-daCI4fxhBjYB_TlZNBSM7NlJX7r89874DH_-lGB_TJWtECdMlRB-NkUAB4l88rKIzDbcT7LdHHH5SQNeWnf_dfoawxdDzmYyzeKe8kc5ucTtd5iJgKtaSBVlLynX_xyYWzMwvKpD9wgr9xeLc_T_dEOzBgA5_fdd17JdDYj3H_06pVKRqTA==&vjs=3&p=5&sk=&fvj=1
+        )
+
+    [50] => Array
+        (
+            [text] => Senior Web Developer
+            [link] => https://indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0Ag7Cm9OE76rZoNmue05K-NG6t1PVqWm7u1ruMyaE33OuUfCVswiy2CH9NzfX19Uw4KVKGdwZfcse_wEcXWW-Se2cL-o3An9oaXYN9GlJqzzaGChxnoGzL_rbg72g9pKtmQOLtE8LJ_sJ29BEy_edQjWups-f2UM5xNwcDbmnsiPBH4fkGeEK7Szeh_THpVC4wWVu87dnO8M-ZNbOoHTCG41kt3xN1pDTksfXlzCd321SbWJrr8ub4G9UWGYbEoZkzG8AU3sdiUaJHGi4z-M-k6T_aL_SM3mo3g85sSBDpuU4LV7Od4lO3ytTE06Dfj3PP7uZZtWL90myolGRgNdHxfC-GuF4Av6LBBbUjAFaRxWi-fzu2vmmQ5w_12TbDsDf8AUKxT8caZCKEorHPzBaCDEEGAmlVRnM2nT83A3g4yYLZK9EcwANYF&vjs=3&p=6&sk=&fvj=1
+        )
+
+    [59] => Array
+        (
+            [text] => Web Developer (Remote, New York-based)
+            [link] => https://indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0Dqf0aJHc4TrqooNyrwki4mkScFuKqlwtZ74tdbI6vn72iUc2CoNNgUs07AeQBu4c-JOZ6lIEhzb_4fs799Byrk9fQDRF6QriebLgKYhiJdMJtg-isuTwnr0PSgyi3OqmWDxOeLlQ4gyFxH2-2veFL4VylwrmI30gcJMoeVb83Vv_iQp0UJc0zAdSnWLM49HP5PXNEL5w3Dia6x5JdMDHAZPh6SNWcSQtGLvu9Zs8aSuBUcgEYuvm9m3PkUlodiuXWYaCq9EpINpVQKgZ6k79w4NfN_ykPHEhxXNRK4Qy065ys8-miLxOvwujN3GeBX5L2S_tToB9ghRTrq4EMnzJ4QUGCmChynSNJKdkRYrQt-VVB0zrVWBZra-FnhMe9ytaCqNHAUE0cwbq813VYRMt5zeKVsfPj4VHqzvqra-JXv2cBLvh-AwdpyMZNE92oE7m8E0DfDv7mnDg==&vjs=3&p=7&sk=&fvj=1
+        )
+
+    [68] => Array
+        (
+            [text] => Web Developer
+            [link] => https://indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0DqwRXB4tYCKUg2DKfyGSEGh24ORHeHA18BRAryFPj-PB7MKEVEdAeqhpfKbJ19nKVh5StwmoHak1OLaP-mwMqrbgpElEAfC4XWBXpeJmvrCOPOr6BkvvLaiO9GXdhoDLzE8cU7Wc4ZUu8gGkrqCuNBpdIJZ_6ih6obB01S1HO-L2rAUkPUAckfbnGzWe8MkYxkWRQBvVs4hxryBhgL3VjcbJrbx0rMiFnvV3ihg5Sz-I0J1wnI_s5ynUW2FLp3E0mUJ5wVchH2sGz6R1OClBT7frZsO_xmCiZUD1yc0UyJLlO2yGq0jRNgmCw2gSILLhG2IJuKExNW9DwWj8j-ZWSuMpRfMMoUP4X6Z-dbzI5UcoIBngLl_rNwcVufwzeSAJLmaR2djEt2gjqo6Ccy39w5lIDtGn6KOQ56NBxzaW9Wig==&vjs=3&p=8&sk=&fvj=1
+        )
+
+    [77] => Array
+        (
+            [text] => Full Stack Developer (Remote Opportunity)
+            [link] => https://indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0BAopNIGse3vCPf1CBn7yfZVDKj6Ta6-aO-zWPN2cLhyvgh_P39XX01uBC-nAiAydXbnP1dPDBv9AcOVzKY7qlb7IzKFQGUPg3vE679wXZaKUbOG3-WGnFF4P7LvyKPXcO_ATkzsceZ1i3Yavhofudqdi02ZTiS8E3L8vvV0tWsfnohudUr6U2aaZCI4qc_4-arqPyOdpTzaqcmieYSziCzA0D7j1vyxABiGy2-Hj3JrB1ZFTRZXg_vqq4bRmGuHeGzD3-wW-lkLnSoTUdFfVuEJMCk6CSPwmOi8TZG12dIJE3wvBJ0UfwEOthDEOKd5PKubYZd9N8GEzGlC_DK7UVKzS52yY7_N01IBXxjkjCwr_Fa9dlIxRPN5XcZ2xtvtpZmqGJ8JArgFkZGCq3QimB01czK6vWiOVDI9peTYJmVvM9v_saIwDQkYT5z67xkM9OOv_q7JPxmIA==&vjs=3&p=9&sk=&fvj=1
+        )
+
+)

@@ -37,14 +37,10 @@ RUN apt-get update \
 # ADD CRON FILES
 #
 
+# WHEN WERE READY TO RUN THE CRON UNCOMMENT!
 # Add crontab file in the cron directory
-ADD crontab /etc/cron.d/jobcron
-
-# Give execution rights on the cron job
-RUN chmod 0644 /etc/cron.d/jobcron
-
-# Apply cron job
-RUN crontab /etc/cron.d/jobcron
+ADD jobs.cron /etc/cron.d/jobs.cron
+RUN crontab /etc/cron.d/jobs.cron;
 
 # wire in a startup script
 ADD bootstrap.sh /var/www/bootstrap.sh

@@ -9,6 +9,19 @@ FROM php:7.2-apache
 # 5. enable rewrite and headers apache modules
 #
 
+#
+# ADD BASE INFRA FILES
+#
+
+# install custom php.ini
+ADD php.ini /usr/local/etc/php/
+
+# Link in the composer.json file
+ADD composer.json /var/www/composer.json
+
+# Install custom apache config
+ADD apache2.conf /etc/apache2/apache2.conf
+
 RUN apt-get update \
 	&& apt-get install -y wget git libssl-dev zip unzip cron \
 	&& rm -rf /var/lib/apt/lists/* \
@@ -21,17 +34,8 @@ RUN apt-get update \
 	&& a2enmod rewrite headers
 
 #
-# ADD
+# ADD CRON FILES
 #
-
-# install custom php.ini
-ADD php.ini /usr/local/etc/php/
-
-# Link in the composer.json file
-ADD composer.json /var/www/composer.json
-
-# Install custom apache config
-ADD apache2.conf /etc/apache2/apache2.conf
 
 # Add crontab file in the cron directory
 ADD crontab /etc/cron.d/jobcron
@@ -41,12 +45,6 @@ RUN chmod 0644 /etc/cron.d/jobcron
 
 # Apply cron job
 RUN crontab /etc/cron.d/jobcron
-
-# Create the log file to be able to run tail
-RUN touch /var/log/cron.log
-
-# Run the command on container startup
-CMD cron && tail -f /var/log/cron.log
 
 # wire in a startup script
 ADD bootstrap.sh /var/www/bootstrap.sh

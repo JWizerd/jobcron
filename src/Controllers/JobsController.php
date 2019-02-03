@@ -1,15 +1,15 @@
-<?php 
+<?php
 
 namespace JobCron\Controllers;
 
 use JobCron\Services\IndeedScraper;
 use \Exception;
 
-class JobsController extends Controller 
+class JobsController extends Controller
 {
-    public function indeed() 
+    public function indeed()
     {
-        $scraper = new IndeedScraper('scraper.html');
+        $scraper = new IndeedScraper('/var/www/html/scraper.html');
 
         try {
             $scraper->scrapeAndSend('jobtitle');

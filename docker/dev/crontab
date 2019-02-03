@@ -1,1 +1,1 @@
-* * * * * tail -f php /var/www/html/cron/job.php JobsController indeed
+* * * * * php /var/www/html/cron/job.php indeed

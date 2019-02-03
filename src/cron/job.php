@@ -1,17 +1,25 @@
 <?php
 // ex: run cron every 15 minutes
 // * */2 * * * tail -f php /var/www/html/cron/job.php JobsController indeed
+require __DIR__ . '../../../vendor/autoload.php';
 
-namespace JobCron\Controllers;
 use JobCron\Utilities\Logger;
 use JobCron\Utilities\Mailer;
-use Throwable;
 
-$job = $argv[1];
-$action = $argv[2];
+$action = $argv[1];
 
 try {
-    (new $job())->$action();
+    $class = "JobCron\Controllers\JobsController";
+
+    // must be an instance of controller and have an action
+    if (class_exists($class) && method_exists($class, $action)) {
+        (new $class)->$action();
+    } else {
+        throw new Exception(
+            "{$class} doesn't exist or method
+            {$method} doesn't exist in class"
+        );
+    }
 } catch(Throwable $e) {
-    Logger::write($e->getMessage(), 'critical', true, true);
+    Logger::write($e, 'critical', true, true);
 }

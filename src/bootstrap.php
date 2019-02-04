@@ -1,13 +1,11 @@
 <?php
-
+namespace JobCron;
 require __DIR__ . '../../vendor/autoload.php';
 
 use MongoDB\Client as Connection;
 
 use JobCron\Utilities\Logger;
 use JobCron\Utilities\CredentialsManager;
-
-require 'router.php';
 
 /* access db connection like so: App::get()->db(); */
 class App 
@@ -34,6 +32,8 @@ class App
         return self::$instance;
     }
 }
+
+require 'router.php';
 
 
 // print_r($connection);

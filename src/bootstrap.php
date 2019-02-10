@@ -1,13 +1,13 @@
 <?php
-
+namespace JobCron;
 require __DIR__ . '../../vendor/autoload.php';
+require "./credentials.php";
 
 use MongoDB\Client as Connection;
 
 use JobCron\Utilities\Logger;
 use JobCron\Utilities\CredentialsManager;
 
-require 'router.php';
 
 /* access db connection like so: App::get()->db(); */
 class App 
@@ -17,9 +17,12 @@ class App
 
     public static function db() 
     {
-        return new Connection(
-            CredentialsManager::get('mongo')['url']
-        );
+        $credentials = require './credentials.php';
+        $db = $credentials['mongo']['url'];
+        $connection =  new Connection($db);
+        //check if db exists/if not create
+        $database_instance = $connection->selectDatabase($credentials['mongo']['db']);
+        return $database_instance;
     }
 
     /**
@@ -34,8 +37,7 @@ class App
         return self::$instance;
     }
 }
-
-
+require 'router.php';
 // print_r($connection);
 
 // $collection = (new MongoDB\Client($dburl))->example->users;
